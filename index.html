@@ -5,6 +5,70 @@
 	
 </head>
 <body>
+
+
+<form action="#" method="get" class="form form-horizontal" name="links_form">
+
+	<p id="message" class="alert-error" style="width:100%"></p>
+    <label for="links">Wybierz adres:</label>
+    <select name="links" id="links">
+    	<option>Wybierz...</option>
+        <option value="http://strefakursow.pl">Start</option>
+        <option value="http://strefakursow.pl/customer/register.html">Rejestracja</option>
+        <option value="https://strefakursow.pl/contact.html">Kontakt</option>
+        <option value="http://strefakursow.pl/kursy_za_darmo">Darmowe kursy</option>
+        
+    </select>
+
+</form>
+
+
+
+
+
+
+<form action="#" method="get" class="form form-horizontal" name="user_form3">
+
+	<p id="message3" class="alert-error" style="width:100%"></p>
+    <label>Podaj Login: </label><input type="text" id="username3" name="user_name3"/>
+    <label> Podaj Hasło: </label><input type="password" id="password3" name="user_pass3"/>
+    <br>
+    <br>
+    <input type="submit" class="btn btn-primary" id="submit3" value="Wyslij" />
+
+</form>
+
+
+
+
+
+<div id="content-form" style="margin-left: 100px; margin-top:100px; width:300px;">
+
+<form action="#" method="get" class="form form-horizontal" name="user_form">
+
+	<p id="message" class="alert-error" style="width:100%"></p>
+    <label>Login: </label><input type="text" id="username" name="user_name"/>
+    <label>Hasło: </label><input type="password" id="password" name="user_pass"/>
+    <br>
+    <br>
+    <input type="submit" class="btn btn-primary" id="submit" value="Wyslij" onClick="checkLength(document.getElementById('username'),6,12)"/>
+
+</form>
+
+</div>
+
+
+
+<form action="#" method="get" class="form form-horizontal" name="user_form1">
+
+	<p id="message2" class="alert-error" style="width:100%"></p>
+    <label>URL: </label><input type="text" name="user_url"/>
+    <br>
+    <br>
+    <input type="submit" class="btn btn-primary" id="submit" value="Wyslij"/>
+
+</form>
+
 <p id ="demo"></p>
 
 <p>Nazwa: <span id ="name"></span></p>
@@ -27,8 +91,15 @@
 <div id="content-external"></div>
 
 
+
+
+
+
+
 <script type="text/javascript" src="jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="scripts.js"></script>
+
+
 
 </body>
 </html>

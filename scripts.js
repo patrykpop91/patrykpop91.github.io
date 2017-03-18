@@ -102,3 +102,44 @@ $( document ).ready(function() {
 	document.getElementById('content-external').innerHTML = output;
 });
 });
+
+
+/*Walidacja formularzy*/
+
+function checkLength(field, min_l, max_l){
+	var userText = field.value;
+	if(userText.length >= min_l && userText.length <= max_l){
+		return true;
+	}
+	else{
+
+		document.getElementById("message").innerHTML = "Długość musi wynościć od " + min_l + " do " + max_l + " !";
+		return false;
+	}
+}
+
+/*Metode indexOF*/
+
+
+
+
+document.user_form1.user_url.onchange = function(){
+	var theUrl = document.user_form1.user_url.value;
+	
+	if(theUrl.indexOf('http://')){
+		document.getElementById('message2').innerHTML = "Adres musi się rozpoczynać od http://";
+	}
+}
+
+/*Zdarzenia onFocus, onBlur*/
+
+
+	var userfield1 = document.getElementById('username3');
+	userfield1.onfocus = function activeAfterFocus(){
+		userfield1.value = "Od 6 do 12 znaków";
+	}
+	userfield1.onblur = function activeAfterBlur(){
+		userfield1.value = "";
+	}
+
+
